@@ -24,8 +24,8 @@ public class DataHandler {
      * @author Enrico Gerding
      *
      */
-        final String database = "comp3208DB.db";
-        final String trainingset_tablename = "training";
+        final String database = "comp3208.db";
+        final String trainingset = "training";
         public SQLiteConnection c;
 
         /**
@@ -56,10 +56,10 @@ public class DataHandler {
          * use a TreeMap.
          */
         public void loadRatings() {
-            System.out.println("Loading data from table " + trainingset_tablename);
+            System.out.println("Loading data from table " + trainingset);
             int count = 0;
             try {
-                SQLiteStatement stat = c.prepare("SELECT * FROM " + trainingset_tablename);
+                SQLiteStatement stat = c.prepare("SELECT * FROM " + trainingset);
 
                 data = new HashMap<>();
                 while (stat.step()) {

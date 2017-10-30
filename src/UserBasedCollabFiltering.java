@@ -1,11 +1,11 @@
 /**
- * Created by Hannah on 27/10/2017.
+ * Created by Hannah on 30/10/2017.
  */
-public class SlopeOne {
+public class UserBasedCollabFiltering {
 
     private float[] predictions;
 
-    public SlopeOne()
+    public UserBasedCollabFiltering()
     {
 
     }

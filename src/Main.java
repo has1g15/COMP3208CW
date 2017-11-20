@@ -10,7 +10,6 @@ public class Main {
 
     public Main()
     {
-        DataHandler dataHandler = new DataHandler();
-        dataHandler.loadRatings();
+        new SlopeOne();
     }
 }
